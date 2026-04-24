@@ -17,7 +17,7 @@ router.get('/:id', getCourseById); // Single course view
 // Instructor only routes
 router.post('/', protect, authorize('Instructor'), createCourse);
 router.put('/:id', protect, authorize('Instructor'), updateCourse);
-router.delete('/:id', protect, authorize('Instructor'), deleteCourse);
+router.delete('/:id', protect, authorize('Instructor', 'Admin'), deleteCourse);
 router.post('/:id/lessons', protect, authorize('Instructor'), addLesson); // Add lesson
 
 module.exports = router;

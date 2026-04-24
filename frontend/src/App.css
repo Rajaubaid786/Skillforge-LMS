@@ -1133,3 +1133,55 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.btn-del-sf {
+  background: #FFEBEB;
+  color: #D32F2F;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-del-sf:hover {
+  background: #D32F2F;
+  color: white;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 1024px) {
+  .sf-dash-layout {
+    grid-template-columns: 1fr; /* Sidebar aur Main content ek ke upar ek aa jayenge */
+  }
+  
+  .sf-stats-row {
+    grid-template-columns: 1fr 1fr; /* Stats 2 columns mein */
+  }
+
+  .sf-course-grid {
+    grid-template-columns: repeat(2, 1fr); /* Courses 2 columns mein */
+  }
+}
+
+@media (max-width: 768px) {
+  .sf-course-grid, .sf-stats-row {
+    grid-template-columns: 1fr; /* Mobile par sab kuch single column */
+  }
+
+  .sf-welcome-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .sf-hero-visual {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .sf-hero-circle {
+    width: 250px;
+    height: 250px;
+  }
+}

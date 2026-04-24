@@ -40,7 +40,6 @@ const addLesson = async (req, res) => {
   try {
     const { title, content } = req.body;
     
-    // Debugging ke liye: Terminal mein id check hogi
     console.log("Adding lesson to Course ID:", req.params.id);
 
     const course = await Course.findById(req.params.id);
@@ -48,10 +47,8 @@ const addLesson = async (req, res) => {
       return res.status(404).json({ message: 'Course not found' });
     }
 
-    // Lesson push karna
     course.lessons.push({ title, content });
     
-    // Save karte waqt validation check hogi
     await course.save();
 
     res.status(201).json({ 
@@ -59,7 +56,6 @@ const addLesson = async (req, res) => {
       course 
     });
   } catch (error) {
-    // Ye line terminal mein crash ki asli wajah bataye gi
     console.error("Lesson Save Error:", error.message);
     res.status(500).json({ message: 'Error adding lesson', error: error.message });
   }
@@ -82,7 +78,6 @@ const deleteCourse = async (req, res) => {
   }
 };
 
-// SAB SE IMPORTANT: Ye exports check karo
 module.exports = { 
   createCourse, 
   getCourses, 

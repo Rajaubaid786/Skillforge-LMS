@@ -99,13 +99,10 @@ const updateProfile = async (req, res) => {
   }
 };
 
-// module.exports mein shamil karna mat bhoolna!
-
-// ... baqi saaray functions (login, register) ke neechay ye exports honay chahiye:
 
 module.exports = { 
   register, 
   login, 
-  getMe,           // Naya function
-  updateProfile    // Naya function
+  getMe,           
+  updateProfile    
 };
