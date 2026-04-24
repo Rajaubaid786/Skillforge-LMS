@@ -136,6 +136,33 @@ npm run seed
 | 👨‍🎓 Student | zara@lms.com | student123 |
 | 👨‍🎓 Student | hamza@lms.com | student123 |
 ---
+## 📸 Screenshots
+
+### 🌐 Public Pages
+![Home](screenshots/1.%20Home-Hero.png)
+![About](screenshots/2.%20Home-About.png)
+![Courses](screenshots/3.%20Home-Courses.png)
+![Reviews](screenshots/4.%20Home-Reviews.png)
+![Footer](screenshots/5.%20Home-Footer.png)
+
+### 🔐 Authentication
+![Login](screenshots/6.%20Login-Page.png)
+![Register](screenshots/7.%20Register-Page.png)
+
+### 👑 Admin Portal
+![Admin Dashboard](screenshots/8.%20Admin-Panel-1.png)
+![Admin Users](screenshots/9.%20Admin-Panel-2.png)
+![Admin Courses](screenshots/10.%20Admin-panel-3.png)
+
+### 👨‍🏫 Instructor Portal
+![Instructor Dashboard](screenshots/11.%20Instructor-Portal-1.png)
+![Instructor Courses](screenshots/12.%20Instructor-Portal-2.png)
+
+### 👨‍🎓 Student Portal
+![Student Dashboard](screenshots/13.%20Student-Portal-1.png)
+![Student Courses](screenshots/14.%20Student-Portal-2.png)
+![Student Profile](screenshots/15.%20Student-Profile.png)
+![Course Content](screenshots/16.%20Course-Content.png)
 
 ## 🔌 API Endpoints
 
