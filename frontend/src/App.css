@@ -174,56 +174,63 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 4. SCALED UP VISUALS */
+/* Container ko set karna */
 .sf-hero-visual {
-  flex: 0 0 45%;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: flex-end; /* Image ko nichay se align karne ke liye */
+  height: 450px;
+  width: 100%;
 }
 
+/* Orange Circle Styling */
 .sf-hero-circle {
   position: absolute;
-  width: 550px; /* Bada yellow circle */
-  height: 550px;
-  background-color: var(--secondary);
+  bottom: 20px; /* Circle ko thora nichay rakhna */
+  width: 320px;
+  height: 320px;
+  background: #f5a623;
   border-radius: 50%;
-  z-index: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.sf-image-placeholder {
-  width: 450px; /* Bada placeholder */
-  height: 650px;
-  border: 3px dashed var(--primary);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 18px;
   z-index: 1;
-  position: relative;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(4px);
+  /* Agar blur hai to yahan se filter hata dein */
+  filter: none !important; 
 }
 
+/* Image Container - Dotted line khatam */
+.sf-image-placeholder {
+  position: relative;
+  z-index: 2;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: none !important; /* Dotted line yahan se khatam hogi */
+  background: transparent !important;
+  overflow: hidden; /* Nichay se image katne ke liye */
+}
+
+/* Actual Image Styling */
+.sf-image-placeholder img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* Isay thora uper push karne ke liye taake pop-out lagay */
+  transform: translateY(10px); 
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); /* Soft shadow */
+}
+
+/* Floating Badge Fix */
 .sf-floating-badge {
   position: absolute;
   bottom: 40px;
-  left: -40px;
+  left: -20px;
+  z-index: 3;
   background: white;
-  padding: 16px 24px;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--text-heading);
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .star-icon {

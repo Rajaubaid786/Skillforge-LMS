@@ -60,9 +60,20 @@ const Home = () => {
           </div>
           <div className="sf-hero-visual">
             <div className="sf-hero-circle"></div>
-            <div className="sf-image-placeholder">
-              <span>[ Student PNG Placeholder ]</span>
-            </div>
+            {/* Yahan placeholder ki jagah actual image tag dalo */}
+  <div className="sf-image-placeholder" style={{ background: 'none' }}> 
+    <img 
+      src="/hero-img.png" 
+      alt="Student" 
+      style={{ 
+        width: '100%', 
+        height: '100%', 
+        objectFit: 'contain',
+        zIndex: 2,
+        position: 'relative'
+      }} 
+    />
+  </div>
             <div className="sf-floating-badge">
               <span className="star-icon">★★★★★</span>
               4.8 · 15k+ Reviews
