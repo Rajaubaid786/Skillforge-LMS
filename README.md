@@ -79,8 +79,8 @@ skillforge-lms/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/skillforge-lms.git
-cd skillforge-lms
+git clone https://github.com/Rajaubaid786/Skillforge-LMS.git
+cd Skillforge-LMS
 ```
 
 ### 2️⃣ Backend Setup
@@ -132,7 +132,9 @@ npm run seed
 | 👨‍🏫 Instructor | sara@lms.com | instructor123 |
 | 👨‍🎓 Student | bilal@lms.com | student123 |
 | 👨‍🎓 Student | ayesha@lms.com | student123 |
-
+| 👨‍🎓 Student | usman@lms.com | student123 |
+| 👨‍🎓 Student | zara@lms.com | student123 |
+| 👨‍🎓 Student | hamza@lms.com | student123 |
 ---
 
 ## 🔌 API Endpoints
