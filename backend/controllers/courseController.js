@@ -24,7 +24,7 @@ const getCourses = async (req, res) => {
   }
 };
 
-// @desc    Get single course by ID (New Fix)
+// @desc    Get single course by ID 
 const getCourseById = async (req, res) => {
   try {
     const course = await Course.findById(req.params.id).populate('instructor', 'name email');

@@ -42,7 +42,6 @@ const Profile = () => {
     navigate('/login');
   };
 
-  // Jab tak data load na ho
   if (!user) {
     return (
       <div className="sf-container" style={{padding: '50px', textAlign: 'center'}}>

@@ -14,11 +14,10 @@ const Login = () => {
     try {
       const res = await API.post('/auth/login', { email, password });
       
-      // Token aur Role save karna zaroori hai authentication ke liye [cite: 104]
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('userRole', res.data.user.role); 
       
-      const role = res.data.user.role.trim(); // Trim se extra spaces khatam ho jayengi
+      const role = res.data.user.role.trim(); 
 console.log("Database se aaya hua role:", role); 
 
 if (role === 'Admin') {

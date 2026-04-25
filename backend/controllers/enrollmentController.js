@@ -27,7 +27,7 @@ const enrollCourse = async (req, res) => {
   }
 };
 
-// 2. Student views THEIR enrolled courses (Tumhara purana code RESTORED)
+// 2. Student views THEIR enrolled courses 
 const getMyCourses = async (req, res) => {
   try {
     const enrollments = await Enrollment.find({ student: req.user._id }).populate('course');
@@ -37,7 +37,7 @@ const getMyCourses = async (req, res) => {
   }
 };
 
-// 3. Instructor views students for a SPECIFIC course (Naya code)
+// 3. Instructor views students for a SPECFIC course (Naya code)
 const getCourseStudents = async (req, res) => {
   try {
     const enrollments = await Enrollment.find({ course: req.params.courseId })
@@ -48,5 +48,4 @@ const getCourseStudents = async (req, res) => {
   }
 };
 
-// Teeno export kar diye
 module.exports = { enrollCourse, getMyCourses, getCourseStudents };

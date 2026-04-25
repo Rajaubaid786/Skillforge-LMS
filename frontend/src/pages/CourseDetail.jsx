@@ -7,7 +7,7 @@ const CourseDetail = () => {
   const { id } = useParams();
   const [course, setCourse] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [activeLesson, setActiveLesson] = useState(null); // Naya state lesson content ke liye
+  const [activeLesson, setActiveLesson] = useState(null); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,7 +15,6 @@ const CourseDetail = () => {
       try {
         const res = await API.get(`/courses/${id}`);
         setCourse(res.data);
-        // Default: Pehla lesson select kar lo agar maujood hai
         if (res.data.lessons && res.data.lessons.length > 0) {
           setActiveLesson(res.data.lessons[0]);
         }

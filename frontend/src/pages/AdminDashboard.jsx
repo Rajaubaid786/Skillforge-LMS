@@ -5,7 +5,7 @@ import '../App.css';
 
 const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
-  const [courses, setCourses] = useState([]); // Naya state courses ke liye
+  const [courses, setCourses] = useState([]); 
   const [stats, setStats] = useState({ totalUsers: 0, instructors: 0, students: 0, totalCourses: 0 });
   const navigate = useNavigate();
 
@@ -20,7 +20,6 @@ const AdminDashboard = () => {
 
   const fetchData = async () => {
     try {
-      // Users aur Courses dono aik sath fetch karo
       const [userRes, courseRes] = await Promise.all([
         API.get('/admin/users'),
         API.get('/courses')
@@ -36,7 +35,7 @@ const AdminDashboard = () => {
         totalUsers: userRes.data.length, 
         instructors, 
         students,
-        totalCourses: courseRes.data.length // Stats mein courses add kiye
+        totalCourses: courseRes.data.length 
       });
     } catch (err) {
       console.error("Error fetching data:", err);
@@ -55,7 +54,6 @@ const AdminDashboard = () => {
     }
   };
 
-  // Naya function Course delete karne ke liye
   const handleDeleteCourse = async (id) => {
     if (window.confirm('Are you sure you want to delete this course?')) {
       try {

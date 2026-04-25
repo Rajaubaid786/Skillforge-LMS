@@ -60,7 +60,7 @@ const Home = () => {
           </div>
           <div className="sf-hero-visual">
             <div className="sf-hero-circle"></div>
-            {/* Yahan placeholder ki jagah actual image tag dalo */}
+            {}
   <div className="sf-image-placeholder" style={{ background: 'none' }}> 
     <img 
       src="/hero-img.png" 

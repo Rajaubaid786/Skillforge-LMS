@@ -74,7 +74,6 @@ const InstructorDashboard = () => {
   const handleAddLesson = async (e) => {
   e.preventDefault();
   
-  // Check karo ke ID empty toh nahi
   if (!addingLessonTo) {
     alert("Course ID missing!");
     return;
@@ -86,9 +85,8 @@ const InstructorDashboard = () => {
     alert('Lesson Added Successfully! 📖');
     setLessonData({ title: '', content: '' });
     setAddingLessonTo(null);
-    fetchCourses(); // List refresh karo
+    fetchCourses(); 
   } catch (err) {
-    // Ye alert aapko exact reason bataye ga
     console.error("Lesson Error:", err.response?.data);
     alert('Failed: ' + (err.response?.data?.message || 'Check Console'));
   }

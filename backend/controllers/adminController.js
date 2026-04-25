@@ -3,7 +3,6 @@ const User = require('../models/User');
 // @desc    Get all users (Admin Only)
 const getAllUsers = async (req, res) => {
   try {
-    // Sab users lao lekin password hide rakho
     const users = await User.find().select('-password');
     res.json(users);
   } catch (error) {

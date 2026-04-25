@@ -4,7 +4,6 @@ import API from '../services/api';
 import '../App.css';
 
 const Register = () => {
-  // Nayi state 'secretKey' add ki hai
   const [formData, setFormData] = useState({ name: '', email: '', password: '', role: 'Student', secretKey: '' });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -76,7 +75,6 @@ const Register = () => {
             <option value="Instructor">Teach (Instructor Account)</option>
           </select>
 
-          {/* JADU YAHAN HAI: Sirf tab dikhega jab Instructor select hoga */}
           {formData.role === 'Instructor' && (
             <div style={{ animation: 'fadeIn 0.3s ease' }}>
               <label className="sf-auth-label" style={{color: 'var(--primary)'}}>Admin Approval Code 🔒</label>

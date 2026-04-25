@@ -1,4 +1,3 @@
-/* === SKILLFORGE DESIGN SYSTEM (SCALED UP) === */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 html {
@@ -32,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 1. SCALED UP CONTAINER */
 .sf-container {
-  max-width: 1400px; /* Bada container screen bharne ke liye */
+  max-width: 1400px; 
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -41,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary-sf {
   background-color: var(--primary);
   color: white;
-  padding: 14px 28px; /* Bigger button */
+  padding: 14px 28px; 
   border-radius: 8px;
   font-weight: 600;
   font-size: 17px;
@@ -61,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 2. GLASSMORPHISM NAVBAR */
 .sf-navbar {
-  height: 85px; /* Taller navbar */
+  height: 85px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,8 +69,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000;
   
   /* The Glass Effect */
-  background: rgba(255, 248, 237, 0.75); /* Semi-transparent cream */
-  backdrop-filter: blur(12px); /* Background blur */
+  background: rgba(255, 248, 237, 0.75); 
+  backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
@@ -83,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sf-brand {
-  font-size: 26px; /* Bada logo font */
+  font-size: 26px; 
   font-weight: 700;
   color: var(--text-heading);
   text-decoration: none;
@@ -96,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-heading);
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px; /* Bade links */
+  font-size: 18px; 
   margin: 0 24px;
   transition: color 0.2s ease;
 }
@@ -108,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 3. SCALED UP HERO SECTION */
 .sf-hero {
   background-color: var(--bg-hero);
-  padding: 100px 0; /* Zyada breathing room */
+  padding: 100px 0; 
   overflow: hidden;
 }
 
@@ -124,14 +123,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sf-hero-text h1 {
-  font-size: 72px; /* Massive impact */
+  font-size: 72px; 
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -1px;
 }
 
 .sf-hero-text p {
-  font-size: 20px; /* Easy to read */
+  font-size: 20px; 
   line-height: 1.8;
   margin-bottom: 48px;
 }
@@ -142,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   border: 1px solid #E5E5E5;
   border-radius: 12px;
-  height: 65px; /* Taller */
+  height: 65px; 
   padding: 6px;
   max-width: 600px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.04);
@@ -174,12 +173,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 4. SCALED UP VISUALS */
-/* Container ko set karna */
+
 .sf-hero-visual {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Image ko nichay se align karne ke liye */
+  align-items: flex-end;
   height: 450px;
   width: 100%;
 }
@@ -187,17 +186,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Orange Circle Styling */
 .sf-hero-circle {
   position: absolute;
-  bottom: 20px; /* Circle ko thora nichay rakhna */
+  bottom: 20px; 
   width: 320px;
   height: 320px;
   background: #f5a623;
   border-radius: 50%;
   z-index: 1;
-  /* Agar blur hai to yahan se filter hata dein */
   filter: none !important; 
 }
 
-/* Image Container - Dotted line khatam */
 .sf-image-placeholder {
   position: relative;
   z-index: 2;
@@ -206,9 +203,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  border: none !important; /* Dotted line yahan se khatam hogi */
+  border: none !important; 
   background: transparent !important;
-  overflow: hidden; /* Nichay se image katne ke liye */
+  overflow: hidden; 
 }
 
 /* Actual Image Styling */
@@ -216,12 +213,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: auto;
   object-fit: contain;
-  /* Isay thora uper push karne ke liye taake pop-out lagay */
   transform: translateY(10px); 
-  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); /* Soft shadow */
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); 
 }
 
-/* Floating Badge Fix */
+/* Floating Badge */
 .sf-floating-badge {
   position: absolute;
   bottom: 40px;
@@ -243,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 ========================================= */
 .sf-features {
   padding: 80px 0;
-  background-color: var(--bg-alt); /* Halka sa grey background taake white cards pop karein */
+  background-color: var(--bg-alt); 
 }
 
 .sf-features-grid {
@@ -265,14 +261,13 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(0,0,0,0.02);
 }
 
-/* Mouse aane pe card hawa mein uthega */
 .sf-feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(232, 68, 26, 0.1); /* Halka sa red shadow */
+  box-shadow: 0 20px 50px rgba(232, 68, 26, 0.1); 
 }
 
 .sf-feature-icon {
-  width: 70px;  /* Bada icon */
+  width: 70px; 
   height: 70px;
   background-color: rgba(232, 68, 26, 0.1); 
   color: var(--primary);
@@ -289,13 +284,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sf-feature-text h4 {
-  font-size: 22px; /* Badi heading */
+  font-size: 22px;
   margin: 0 0 6px 0;
   font-weight: 700;
 }
 
 .sf-feature-text p {
-  font-size: 16px; /* Bada text */
+  font-size: 16px; 
   color: #888;
   margin: 0;
 }
@@ -310,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 .sf-about-content {
   display: flex;
   align-items: center;
-  gap: 100px; /* Zyada fasla */
+  gap: 100px;
 }
 
 /* About Image Side */
@@ -337,16 +332,15 @@ h1, h2, h3, h4, h5, h6 {
 .sf-about-badge {
   position: absolute;
   bottom: 50px;
-  left: -50px; /* Image se bahar nikal diya */
-  background: white;
+  left: -50px; 
   padding: 18px 28px;
   border-radius: 999px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Heavy shadow for 3D pop */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); 
   display: flex;
   align-items: center;
   gap: 16px;
   z-index: 2;
-  animation: floatUpAndDown 3.5s ease-in-out infinite; /* Continuous floating */
+  animation: floatUpAndDown 3.5s ease-in-out infinite;
 }
 
 .sf-badge-red {
@@ -461,7 +455,7 @@ h1, h2, h3, h4, h5, h6 {
 .sf-stats-img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(245, 166, 35, 0.2); /* Yellow glow */
+  box-shadow: 0 15px 40px rgba(245, 166, 35, 0.2); 
 }
 
 /* =========================================
@@ -580,7 +574,7 @@ h1, h2, h3, h4, h5, h6 {
 ========================================= */
 .sf-testimonials {
   padding: 100px 0;
-  background-color: var(--bg-alt); /* Off-white taake cards pop karein */
+  background-color: var(--bg-alt); 
 }
 
 .sf-testimonials-grid {
@@ -654,11 +648,10 @@ h1, h2, h3, h4, h5, h6 {
    10. ULTRA-AESTHETIC DARK FOOTER
 ========================================= */
 .sf-footer {
-  /* Rich gradient instead of flat dark color */
   background: linear-gradient(180deg, #2B2B3A 0%, #1A1A2E 100%);
   color: #AAAAAA;
-  padding: 0 0 30px 0; /* Padding adjust ki hai floating box ke liye */
-  margin-top: 150px; /* Box ko upar nikalne ke liye space */
+  padding: 0 0 30px 0; 
+  margin-top: 150px;
   position: relative;
 }
 
@@ -672,14 +665,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   color: white;
   box-shadow: 0 20px 50px rgba(232, 68, 26, 0.4);
-  /* Ye animation usko hawa mein tairayegi */
   animation: floatBox 4s ease-in-out infinite; 
 }
 
-/* Ye engine hai jo usko upar neechay karega */
 @keyframes floatBox {
   0% { transform: translateY(-80px); }
-  50% { transform: translateY(-95px); } /* Thora aur upar jayega */
+  50% { transform: translateY(-95px); } 
   100% { transform: translateY(-80px); }
 }
 
@@ -734,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 60px;
-  margin-top: -20px; /* Adjusting space after floating box */
+  margin-top: -20px; 
 }
 
 .sf-footer-brand {
@@ -777,7 +768,7 @@ h1, h2, h3, h4, h5, h6 {
 .sf-social-icon:hover {
   background: var(--primary);
   transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(232, 68, 26, 0.5); /* Aesthetic Glow */
+  box-shadow: 0 10px 20px rgba(232, 68, 26, 0.5); 
   border-color: var(--primary);
 }
 
@@ -789,7 +780,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* Heading ke neechay choti si red line */
 .sf-footer h4::after {
   content: '';
   position: absolute;
@@ -819,7 +809,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* Link hover effect (slide right) */
 .sf-footer ul a:hover {
   color: white;
   transform: translateX(6px);
@@ -853,7 +842,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-hero); /* Wahi cream background */
+  background-color: var(--bg-hero); 
   padding: 40px 20px;
 }
 
@@ -869,7 +858,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-/* Top pe ek choti si brand patti */
 .sf-auth-card::before {
   content: '';
   position: absolute;
@@ -958,7 +946,7 @@ h1, h2, h3, h4, h5, h6 {
    12. DASHBOARDS (INSTRUCTOR & STUDENT)
 ========================================= */
 .sf-dashboard-page {
-  background-color: #F4F7FE; /* Premium light grey/blue background */
+  background-color: #F4F7FE; 
   min-height: 100vh;
   padding-bottom: 80px;
 }
@@ -1042,7 +1030,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sf-dash-sidebar {
-  flex: 0 0 35%; /* Form side */
+  flex: 0 0 35%; 
   background: white;
   padding: 30px;
   border-radius: 20px;
@@ -1050,7 +1038,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sf-dash-main {
-  flex: 1; /* Course Grid side */
+  flex: 1; 
 }
 
 .sf-dash-card {
@@ -1088,7 +1076,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
 }
 
-/* Student Dashboard Premium Upgrades */
 .sf-stats-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1152,21 +1139,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Responsive Design */
 @media (max-width: 1024px) {
   .sf-dash-layout {
-    grid-template-columns: 1fr; /* Sidebar aur Main content ek ke upar ek aa jayenge */
+    grid-template-columns: 1fr; 
   }
   
   .sf-stats-row {
-    grid-template-columns: 1fr 1fr; /* Stats 2 columns mein */
+    grid-template-columns: 1fr 1fr;
   }
 
   .sf-course-grid {
-    grid-template-columns: repeat(2, 1fr); /* Courses 2 columns mein */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .sf-course-grid, .sf-stats-row {
-    grid-template-columns: 1fr; /* Mobile par sab kuch single column */
+    grid-template-columns: 1fr; 
   }
 
   .sf-welcome-banner {

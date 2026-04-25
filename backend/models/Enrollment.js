@@ -13,7 +13,7 @@ const enrollmentSchema = new mongoose.Schema({
   },
   progress: { 
     type: Number, 
-    default: 0 // Document requirement: Student ki progress track karne ke liye
+    default: 0 
   }
 }, { timestamps: true });
 

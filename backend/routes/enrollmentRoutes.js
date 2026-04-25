@@ -6,7 +6,7 @@ const { protect } = require('../middleware/authMiddleware');
 
 // Student Routes
 router.post('/', protect, enrollCourse);
-router.get('/my-courses', protect, getMyCourses); // Crash fix: Ye route wapas aa gaya
+router.get('/my-courses', protect, getMyCourses); 
 
 // Instructor Route
 router.get('/course/:courseId', protect, getCourseStudents);

@@ -6,9 +6,9 @@ const courseSchema = new mongoose.Schema({
   instructor: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, 
   category: { type: String, required: true }, 
   price: { type: Number, required: true }, 
-  // 'required: true' hata diya taake purane courses crash na karein
+
   seats: { type: Number, default: 0 }, 
-  // Naya Field: Lessons add karne ke liye 
+
   lessons: [
     {
       title: { type: String, required: true },
