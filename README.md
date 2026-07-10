@@ -25,7 +25,7 @@
 ### 👨‍🏫 Instructor Panel
 - Create, update, and delete courses
 - Upload lessons with titles and detailed content
-- View students enrolled in their courses
+- View students enrolled in their courses.
 
 ### 👨‍🎓 Student Portal
 - Browse and search available courses
